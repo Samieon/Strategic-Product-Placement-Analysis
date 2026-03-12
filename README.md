@@ -1,219 +1,213 @@
-Strategic Product Placement Analysis Using Data 
-(Team Id : 6997f7cd05fb21b07dca8319)
-Visualization 
-1. Introduction 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Strategic Product Placement Analysis Using Data</title>
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:40px;
+line-height:1.6;
+}
+h1,h2,h3{
+color:#2c3e50;
+}
+table{
+border-collapse:collapse;
+width:80%;
+}
+table,th,td{
+border:1px solid #333;
+padding:8px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Strategic Product Placement Analysis Using Data</h1>
+<p><strong>Team ID:</strong> 6997f7cd05fb21b07dca8319</p>
+
+<h2>1. Introduction</h2>
+<p>
 Retail businesses depend on effective product placement strategies to increase sales and 
 enhance the shopping experience. The position of items within the store, such as in aisles, 
 near the entrance, or on end-cap displays, can strongly affect customers' buying decisions.
-The aim of this project is to study how product positioning, customer demographics, 
-pricing, and promotional methods influence overall sales performance. By examining retail 
-data and presenting it through visual dashboards, companies can make informed decisions 
-about optimal product placement to boost revenue.
-This project utilizes Tableau for creating data visualizations and Flask to develop a web￾based interface that showcases interactive dashboards and storytelling features.
-2. Problem Statement 
-Retail stores frequently face challenges in identifying the most effective product placement 
+</p>
+
+<p>
+This project studies how product positioning, customer demographics, pricing, and 
+promotional methods influence overall sales performance. Tableau is used for data 
+visualization and Flask is used to create a web interface for dashboards.
+</p>
+
+<h2>2. Problem Statement</h2>
+<p>
+Retail stores often face challenges in identifying the most effective product placement 
 strategy that increases sales while maintaining an efficient store layout.
-The main issue addressed in this project is:
-How do product placement, pricing strategies, and customer demographics affect 
-product sales in retail stores?
-Understanding this connection can help businesses:
-• Enhance product placement strategies
-• Improve product visibility for customers
-• Adjust and optimize pricing strategies
-• Boost overall sales performance
-3. Objectives of the Project
-The primary objectives of this project include:
-1. To examine the connection between product placement and the quantity of sales 
-generated.
-2. To study how customer demographics affect purchasing patterns and decision-making.
-3. To analyze the difference between competitor pricing and the store’s pricing strategy.
-4. To assess how promotional activities influence product sales performance.
-5. To create interactive dashboards and visual stories that provide meaningful business 
-insights.
-6. To incorporate the analytics dashboard into a web application developed using Flask.
-Project objectives describe the specific outcomes a project aims to achieve and help guide 
-the team toward measurable results and better decision-making.
-4. Data Collection 
-The dataset used in this project was obtained from Kaggle, a well-known platform for public 
-datasets
-Dataset Source: 
-https://www.kaggle.com/datasets/amitvkulkarni/impact-of-product-positioning-on-sales
-The dataset contains retail sales information including: 
-• Product category
-• Product position in store 
-• Sales volume 
-• Price
-• Competitor price
-• Consumer demographics 
-• Promotion status
-• Seasonal demand
-• Foot traffic 
-This dataset helps analyze how different retail factors influence product sales.
-5. Data Description 
-The dataset contains several important variables used for analysis.
-Column Name Product 
-Product Category Category of product (Clothing, Electronics, Food)
-Product Position Placement location (Aisle, End-cap, Front of Store)
-Price Price of product in store
-Competitor Price Price of the same product at competitor store
-Sales Volume Number of units sold
-Promotion Whether promotion was applied
-Consumer Demographics Customer group (Families, Seniors, Young Adults, Students) 
-Seasonality Seasonal demand factor 
-Foot Traffic Customer traffic in store
-7. Data Cleaning and Preparation 
-Before visualization, the dataset was cleaned and prepared for analysis. 
-The following steps were performed:
-1. Handling Missing Values
-The dataset was inspected to identify missing or incomplete values. Missing values were either 
-removed or replaced with appropriate values. 
-2. Data Formatting 
-Columns such as Price and Sales Volume were converted into numerical formats to allow accurate 
-calculations. 
-3. Categorization Categorical variables such as: 
-• Product Position
-• Product Category
-• Consumer Demographics were organized properly for easier visualization.
-were organized properly for easier visualization. 
-4. Data Validation 
-The dataset was checked for duplicate records and inconsistent entries to ensure data 
-accuracy. 
-After cleaning, the dataset was ready for visualization. 
-7. Data Visualization Using Tableau 
-To analyze the dataset effectively, several visualizations were created using Tableau. 
-These visualizations were later combined into a dashboard for interactive exploration. 
-Visualizations Created 
-1. Average Sales Volume vs Product Category 
- o Shows which category sells the most. 
-2. Consumer Demographics vs Sales Volume 
- o Displays which customer groups purchase the most. 
-3. Promotion vs Product Category 
- o Shows the impact of promotions on product sales. 
-4. Foot Traffic vs Average Sales Volume 
- o Demonstrates how store traffic influences sales. 
-5. Competitor Price vs Product Price 
- o Helps analyze pricing strategy against competitors. 
-6. Product Category vs Price Distribution 
- o Shows price comparison across categories. 
-7. Product Placement vs Sales Volume 
- o Evaluates the impact of location inside store. 
-8. Dashboard Development 
-A Tableau Dashboard was created by combining multiple visualizations into one interface. 
-The dashboard allows users to: 
-• Filter by product category 
-• Filter by consumer demographics 
-• Analyze sales trends 
-• Compare pricing and promotions 
-• Understand product placement performance
-The dashboard provides a comprehensive view of sales insights. 
-9. Story Creation in Tableau 
-To present insights clearly, a Tableau Story was developed. 
-The story explains the findings step by step. 
-Story Points 
-Story Point 1: Product Category vs Average Sales Volume 
-The first story point analyzes the average sales volume across different product categories. 
-The categories analyzed are: 
-• Clothing 
-• Electronics 
-• Food 
-From the bar chart visualization, the following observations were made: 
-1660
-1680
-1700
-1720
-1740
-1760
-1780
-1800
-1820
-1840
-Clothing Electronics Food
-Avg Sales
-Product Category Avg Sales
-Clothing 1830.1
-Electronics 1748.6
-Food 1727.7
-Insight
-Clothing products generate the highest average sales volume compared to electronics and 
-food.
-• Clothing products recorded the highest average sales volume of 1830.1. 
-• Electronics products recorded an average sales volume of 1748.6. 
-• Food products recorded the lowest average sales volume of 1727.7. 
-This indicates that clothing products are the most profitable category in terms of sales 
-performance. 
-Retailers can use this insight to: 
-• Allocate more shelf space for clothing products 
-• Place clothing items in highly visible store locations 
-• Focus marketing strategies on high-performing categories 
-Story Point 2: Product Position vs Sales Volume and Foot Traffic 
-The second story point examines how product placement and store foot traffic affect sales 
-volume. 
-The visualization shows different product positions: 
-• Aisle 
-• End-cap 
-• Front of Store 
-Along with different foot traffic levels: 
-• High 
-• Medium 
-• Low 
-The analysis reveals: 
-• Products placed in high foot traffic areas generate higher sales. 
-• Front of Store placement with high traffic produced one of the highest sales volumes 
-(1811.7). 
-• Aisle placement also shows strong performance with sales around 1900.5 in low 
-traffic conditions, indicating product demand also affects results. 
-This demonstrates that store layout and customer movement patterns influence purchasing 
-behavior. 
-Retailers should strategically place popular products in high traffic zones to maximize 
-visibility and sales. 
-Story Point 3: Product Placement Impact on Sales (Treemap Analysis) 
-The third story point visualizes the relationship between product category and store 
-placement using a treemap chart. 
-Each rectangle represents a combination of: 
-• Product Category 
-• Store Position 
-Key insights include: 
-• Clothing products placed at the front of the store recorded the highest sales volume (1923.7). 
-• Clothing products placed in aisles also perform strongly with sales around 1832.8. 
-• Electronics products show moderate sales across positions. 
-• Food products show comparatively lower sales performance. 
-The treemap clearly highlights that product placement significantly influences sales 
-performance. 
-Placing high-demand products in prime store locations such as the front of the store 
-increases sales potential. 
-10. Web Application Development Using Flask 
-To make the dashboard accessible through a web interface, a Flask web application was 
-developed. 
-The web application contains the following sections: 
-• Home Page 
-• About Section 
-• Tableau Dashboard Integration 
-• Tableau Story Integration 
-• Contact Page 
-The Tableau dashboard and story were embedded using Tableau Public embed code. 
-This allows users to interact with the analytics directly on the website. 
-11. Key Findings 
-1. From the Tableau Story analysis, the following conclusions were drawn: 
-2. Clothing is the highest performing product category. 
-3. Product placement significantly affects sales performance. 
-4. Front-of-store placement improves product visibility and customer engagement. 
-5. Foot traffic plays an important role in driving retail sales. 
-These insights can help retailers optimize store layout, product positioning, and marketing
-strategies.
-12. Conclusion 
-This project demonstrates how data visualization and analytics can help retail businesses 
-improve product placement strategies and increase sales performance. 
-Using Tableau dashboards and interactive storytelling, businesses can clearly understand: 
-• Customer purchasing behavior 
-• Product placement effectiveness 
-• Pricing competitiveness 
-• Promotional impact 
-The integration of analytics into a web application makes the insights easily accessible and 
-interactive. 
-13. Future Enhancements 
-Future improvements for this project could include: 
-• Real-time retail sales data integration
-• Machine learning models for sales prediction 
-• Customer behavior analysis 
-• Inventory optimization 
-• Mobile responsive dashboard interface 
+</p>
+
+<p><strong>Main Question:</strong></p>
+<p>How do product placement, pricing strategies, and customer demographics affect product sales in retail stores?</p>
+
+<ul>
+<li>Enhance product placement strategies</li>
+<li>Improve product visibility</li>
+<li>Optimize pricing strategies</li>
+<li>Increase overall sales performance</li>
+</ul>
+
+<h2>3. Objectives of the Project</h2>
+<ol>
+<li>Examine the relationship between product placement and sales.</li>
+<li>Study how customer demographics influence purchasing behavior.</li>
+<li>Compare store pricing with competitor pricing.</li>
+<li>Analyze the effect of promotions on sales.</li>
+<li>Create interactive dashboards using Tableau.</li>
+<li>Integrate analytics dashboards into a Flask web application.</li>
+</ol>
+
+<h2>4. Data Collection</h2>
+<p>Dataset Source:</p>
+<p>
+<a href="https://www.kaggle.com/datasets/amitvkulkarni/impact-of-product-positioning-on-sales">
+Kaggle Dataset
+</a>
+</p>
+
+<p>The dataset includes:</p>
+<ul>
+<li>Product Category</li>
+<li>Product Position</li>
+<li>Sales Volume</li>
+<li>Price</li>
+<li>Competitor Price</li>
+<li>Consumer Demographics</li>
+<li>Promotion Status</li>
+<li>Seasonal Demand</li>
+<li>Foot Traffic</li>
+</ul>
+
+<h2>5. Data Description</h2>
+
+<table>
+<tr>
+<th>Column Name</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Product Category</td>
+<td>Category of product (Clothing, Electronics, Food)</td>
+</tr>
+
+<tr>
+<td>Product Position</td>
+<td>Placement location (Aisle, End-cap, Front of Store)</td>
+</tr>
+
+<tr>
+<td>Price</td>
+<td>Price of the product in the store</td>
+</tr>
+
+<tr>
+<td>Competitor Price</td>
+<td>Price of the same product at competitor store</td>
+</tr>
+
+<tr>
+<td>Sales Volume</td>
+<td>Number of units sold</td>
+</tr>
+
+<tr>
+<td>Promotion</td>
+<td>Whether promotion was applied</td>
+</tr>
+
+<tr>
+<td>Consumer Demographics</td>
+<td>Customer group (Families, Seniors, Students)</td>
+</tr>
+
+<tr>
+<td>Seasonality</td>
+<td>Seasonal demand factor</td>
+</tr>
+
+<tr>
+<td>Foot Traffic</td>
+<td>Customer traffic in store</td>
+</tr>
+
+</table>
+
+<h2>6. Data Cleaning and Preparation</h2>
+
+<ul>
+<li>Handling missing values</li>
+<li>Formatting data columns</li>
+<li>Categorizing variables</li>
+<li>Removing duplicate records</li>
+</ul>
+
+<h2>7. Data Visualization Using Tableau</h2>
+
+<ul>
+<li>Average Sales Volume vs Product Category</li>
+<li>Consumer Demographics vs Sales Volume</li>
+<li>Promotion vs Product Category</li>
+<li>Foot Traffic vs Average Sales Volume</li>
+<li>Competitor Price vs Product Price</li>
+<li>Product Category vs Price Distribution</li>
+<li>Product Placement vs Sales Volume</li>
+</ul>
+
+<h2>8. Dashboard Development</h2>
+<p>
+A Tableau dashboard was created to combine multiple visualizations into one interface.
+Users can filter data by product category, demographics, pricing, and promotions.
+</p>
+
+<h2>9. Key Insights</h2>
+
+<ul>
+<li>Clothing products have the highest sales.</li>
+<li>Product placement strongly affects sales.</li>
+<li>Front-of-store placement increases visibility.</li>
+<li>Foot traffic influences purchasing behavior.</li>
+</ul>
+
+<h2>10. Web Application Development</h2>
+<p>
+A Flask web application was created containing:
+</p>
+
+<ul>
+<li>Home Page</li>
+<li>About Page</li>
+<li>Tableau Dashboard</li>
+<li>Tableau Story</li>
+<li>Contact Page</li>
+</ul>
+
+<h2>11. Conclusion</h2>
+
+<p>
+Data visualization helps retailers understand customer behavior, pricing competition, 
+and product placement effectiveness. Using Tableau dashboards and Flask web integration, 
+businesses can make better decisions to improve sales performance.
+</p>
+
+<h2>12. Future Enhancements</h2>
+
+<ul>
+<li>Real-time sales data integration</li>
+<li>Machine learning for sales prediction</li>
+<li>Customer behavior analysis</li>
+<li>Inventory optimization</li>
+<li>Mobile responsive dashboard</li>
+</ul>
+
+</body>
+</html>
