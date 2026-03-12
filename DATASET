@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product Positioning Data</title>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #f2f2f2;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Product Positioning Data</h2>
+
+<table>
+<tr>
+<th>Product ID</th>
+<th>Product Position</th>
+<th>Price</th>
+<th>Competitor's Price</th>
+<th>Promotion</th>
+<th>Foot Traffic</th>
+<th>Consumer Demographics</th>
+<th>Product Category</th>
+<th>Seasonal</th>
+<th>Sales Volume</th>
+</tr>
+
+<tr>
+<td>185102</td>
+<td>Aisle</td>
+<td>17.07</td>
+<td>16.16</td>
+<td>No</td>
+<td>Medium</td>
+<td>Families</td>
+<td>Clothing</td>
+<td>No</td>
+<td>2823</td>
+</tr>
+
+<tr>
+<td>188771</td>
+<td>Aisle</td>
+<td>17.41</td>
+<td>13.13</td>
+<td>No</td>
+<td>Low</td>
+<td>Seniors</td>
+<td>Clothing</td>
+<td>No</td>
+<td>654</td>
+</tr>
+
+<tr>
+<td>180176</td>
+<td>End-cap</td>
+<td>43.16</td>
+<td>38.37</td>
+<td>Yes</td>
+<td>Medium</td>
+<td>Young Adults</td>
+<td>Electronics</td>
+<td>Yes</td>
+<td>2220</td>
+</tr>
+
+</table>
+
+</body>
+</html>
