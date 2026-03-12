@@ -1,26 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Strategic Product Placement Analysis Using Data</title>
-<style>
-body{
-font-family: Arial, sans-serif;
-margin:40px;
-line-height:1.6;
-}
-h1,h2,h3{
-color:#2c3e50;
-}
-table{
-border-collapse:collapse;
-width:80%;
-}
-table,th,td{
-border:1px solid #333;
-padding:8px;
-}
-</style>
-</head>
 
 <body>
 
